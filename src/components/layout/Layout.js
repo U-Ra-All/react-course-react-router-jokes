@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import Header from './Header';
 import styles from './Layout.module.css';
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <Fragment>
       <Header />
