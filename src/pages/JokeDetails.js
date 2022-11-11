@@ -1,5 +1,8 @@
+import { useParams } from 'react-router-dom';
+
 const JokeDetails = () => {
-  return <h1>Joke Details Page</h1>;
+  const params = useParams();
+  return <h1>Joke Details Page {params.jokeId}</h1>;
 };
 
 export default JokeDetails;
