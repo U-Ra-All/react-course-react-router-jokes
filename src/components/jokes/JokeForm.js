@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-import Card from '../ui/Card';
+import Card from '../UI/Card';
 import Loader from '../UI/Loader';
 import styles from './JokeForm.module.css';
 

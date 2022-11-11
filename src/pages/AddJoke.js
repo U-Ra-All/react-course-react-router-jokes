@@ -1,5 +1,11 @@
+import JokeForm from '../components/jokes/JokeForm';
+
 const AddJoke = () => {
-  return <h1>Add Joke Page</h1>;
+  const addJokeHandler = (jokeData) => {
+    console.log(jokeData);
+  };
+
+  return <JokeForm onAddJoke={addJokeHandler} />;
 };
 
 export default AddJoke;
