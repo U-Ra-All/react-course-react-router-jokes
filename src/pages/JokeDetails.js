@@ -21,6 +21,11 @@ const DUMMY_JOKES = [
 const JokeDetails = () => {
   const params = useParams();
   const joke = DUMMY_JOKES.find((joke) => joke.id === params.jokeId);
+
+  if (!joke) {
+    return <h1 className='centered'>Шуток не найдено</h1>;
+  }
+
   return (
     <Fragment>
       <HighlightedJoke text={joke.text} topic={joke.topic} />

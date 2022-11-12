@@ -3,6 +3,7 @@ import Jokes from './pages/Jokes';
 import JokeDetails from './pages/JokeDetails';
 import AddJoke from './pages/AddJoke';
 import Layout from './components/layout/Layout';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path='/add-joke'>
           <AddJoke />
+        </Route>
+        <Route path='*'>
+          <NotFound />
         </Route>
       </Switch>
     </Layout>
