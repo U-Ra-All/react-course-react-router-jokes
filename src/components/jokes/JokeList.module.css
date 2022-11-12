@@ -4,13 +4,13 @@
   padding: 0;
 }
 
-.filter {
+.sort {
   padding-bottom: 1rem;
   border-bottom: 3px solid #f6d0a4;
   margin-bottom: 2rem;
 }
 
-.filter button {
+.sort button {
   font: inherit;
   color: #f48405;
   border: 1px solid #f48405;
@@ -20,6 +20,6 @@
   cursor: pointer;
 }
 
-.filter button:hover {
+.sort button:hover {
   background-color: #f6d0a4;
 }
