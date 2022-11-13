@@ -17,6 +17,7 @@ const sortJokes = (jokes, isAscending) => {
 const JokeList = (props) => {
   const history = useHistory();
   const location = useLocation();
+  console.log(location);
 
   const queryParams = new URLSearchParams(location.search);
   const sortingOrder = queryParams.get('sort');
@@ -24,7 +25,14 @@ const JokeList = (props) => {
   const sortedJokes = sortJokes(props.jokes, isSortingAscending);
 
   const toggleSortingHandler = () => {
-    history.push('/jokes?sort=' + (isSortingAscending ? 'desc' : 'asc'));
+    history.push({
+      pathname: location.pathname,
+      search: `?sort=${isSortingAscending ? 'desc' : 'asc'}`,
+    });
+
+    // history.push(
+    //   `${location.pathname}?sort=${(isSortingAscending ? 'desc' : 'asc')}`
+    // );
   };
 
   return (

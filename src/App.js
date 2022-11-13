@@ -10,12 +10,12 @@ function App() {
     <Layout>
       <Switch>
         <Route path='/' exact>
-          <Redirect to='/jokes' />
+          <Redirect to='/joke-list' />
         </Route>
-        <Route path='/jokes' exact>
+        <Route path='/joke-list' exact>
           <Jokes />
         </Route>
-        <Route path='/jokes/:jokeId'>
+        <Route path='/joke-list/:jokeId'>
           <JokeDetails />
         </Route>
         <Route path='/add-joke'>
