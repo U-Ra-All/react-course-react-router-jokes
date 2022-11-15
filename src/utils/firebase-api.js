@@ -1,5 +1,5 @@
 const FIREBASE_ROOT_DOMAIN =
-  'https://react-course-http-8220d-default-rtdb.firebaseio.com/';
+  'https://react-course-http-8220d-default-rtdb.firebaseio.com';
 
 export async function getJokes() {
   const response = await fetch(`${FIREBASE_ROOT_DOMAIN}/jokes.json`);
